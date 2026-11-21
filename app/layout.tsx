@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oise Giwa-Okug e",
+  title: "Oise Giwa-Okugbe",
   description: "Full-Stack Software Developer",
 };
 
