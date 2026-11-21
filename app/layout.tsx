@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://oiseokugbe.vercel.app"),
     title: { default: "Oise | Full-Stack Developer", template: "%s | Oise" },
       description: "I'm Oise, a full-stack developer building modern, responsive and high-performance websites for businesses in Nigeria.",
-        applicationName: "Oise",
+        applicationName: "Oise.dev",
           authors: [{ name: "Oise" }],
             creator: "Oise",
               publisher: "Oise",
@@ -23,22 +23,19 @@ export const metadata: Metadata = {
                                     },
                                       twitter: { card: "summary_large_image", title: "Oise | Full-Stack Developer", description: "Building modern websites and digital experiences for businesses.", images: ["/og-image.jpg"] },
                                         robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
-},                       
-verification: {
-    google: "mtTbcdTD0ygT03gell3w7Qdxl3g5cH6viUMeQUtUIrA",
-    },
+                                          verification: { google: "mtTbcdTD0ygT03gell3w7Qdxl3g5cH6viUMeQUtUIrA" },
+                                            alternates: { canonical: "/" },
+                                              icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
+                                                category: "technology",
+                                                };
 
-alternates: { canonical: "/" },
-                                            icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
-                                              category: "technology",
-                                              };
+                                                export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#151C2C" };
 
-                                              export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#151C2C" };
-
-                                              export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-                                                return (
-                                                    <html lang="en-NG">
-                                                          <body className={`${manrope.variable} ${jetbrainsMono.variable} antialiased`}> <meta name="google-site-verification" content="mtTbcdTD0ygT03gell3w7Qdxl3g5cH6viUMeQUtUIrA" />{children}</body>
-                                                              </html>
-                                                                );
-                                                            }
+                                                export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+                                                  return (
+                                                      <html lang="en-NG">
+                                                            <body className={`${manrope.variable} ${jetbrainsMono.variable} antialiased`}>{children}</body>
+                                                                </html>
+                                                                  );
+                                                                  }
+                                                                  
