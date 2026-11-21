@@ -38,7 +38,8 @@ export default function TopBar() {
                     <button className="text-slate-500 font-bold capitalize text-xl active:underline" key={key}>{item}</button>
                 )
             })}
-            <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")}
+            <button onClick={() => {window.open("https://wa.me/2347042071497⁠", "_blank")
+toggleMenu}}
               className="hover:bg-slate-950 transition-all duration-300 bg-slate-500 hover:text-slate-500 text-slate-950 capitalize py-2 px-3 border border-gray-800 hover:border-slate-500 w-50 font-2xl m-auto rounded-2xl"
               >
                 {"let's talk!"}
