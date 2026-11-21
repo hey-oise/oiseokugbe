@@ -29,7 +29,7 @@ export default function TopBar() {
             </div>
             <button className="flex md:hidden" onClick={toggleMenu}>{!isOpened ? <Menu className="text-slate-500"/> : <X className="text-slate-500"/>}</button>
 
-            <div className={`bg-slate-900 w-60 h-60 fixed right-3 top-25 border border-slate-800 rounded-2xl flex md:hidden shadow-xl transition-all duration-300 ease-in-out ${isOpened ?
+            <div className={`bg-slate-900 w-60 h-60 fixed right-1 top-25 border border-slate-800 rounded-2xl flex md:hidden shadow-xl transition-all duration-300 ease-in-out ${isOpened ?
                 "opacity-100 -translate-x-4 visible" :
                 "opacity-0  invisible translate-x-4 pointer-events-none"
             }`}></div>
