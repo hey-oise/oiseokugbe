@@ -6,8 +6,6 @@ export default function TopBar() {
     const navItems = ["home",
      "about",
      "projects",
-     "skills",
-     "contact"
     ]
     const [isOpened,setIsOpened] = useState(false);
     const toggleMenu = ()=> {
@@ -22,11 +20,11 @@ export default function TopBar() {
         px-7 border-b border-slate-800">
             <div className="flex flex-row justify-between w-full items-center">
             <Link href="/" className="text-slate-500 text-xl capitalize font-bold h-fit w-fit">oise</Link>
-            <div className="hidden md:flex flex-row justify-between w-full">
-                <div className="flex flex-row gap-3 mx-auto">
+            <div className="hidden md:flex flex-row justify-end gap-7 w-full">
+                <div className="flex flex-row gap-3">
                 {navItems.map(
                         (item, key) => { return (<button key={key} className="text-slate-600 capitalize active:underline">{item}</button>)})}
-                        </div>                     <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")} className="bg-slate-950 transition-all duration-300 hover:bg-slate-500 text-slate-500 hover:text-slate-950 capitalize py-3 px-5 border border-slate-800 hover:border-slate-500 rounded-2xl">{"let's talk!"}</button>
+                        </div>                     <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")} className="bg-slate-950 transition-all duration-300 hover:bg-slate-500 text-slate-500 hover:text-slate-950 capitalize py-2 px-5 border border-slate-800 hover:border-slate-500 rounded-xl">{"let's talk!"}</button>
             </div>
             <button className="flex md:hidden" onClick={toggleMenu}>{!isOpened ? <Menu className="text-slate-500"/> : <X className="text-slate-500"/>}</button>
 
