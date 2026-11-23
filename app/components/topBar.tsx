@@ -31,7 +31,7 @@ export default function TopBar() {
             <div className="hidden md:flex flex-row justify-end gap-7 w-full">
                 <div className="flex flex-row gap-3">
                 {navItems.map(
-                        (item, key) => { return (<Link href={"#"+item} key={key} className="text-slate-600 capitalize active:underline">{item}</Link>)})}
+                        (item, key) => { return (<Link href={"#"+item} key={key} className="text-slate-600 capitalize active:underline my-auto">{item}</Link>)})}
                         </div>                     <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")} className="bg-slate-950 transition-all duration-300 hover:bg-slate-500 text-slate-500 hover:text-slate-950 capitalize py-2 px-5 border border-slate-800 hover:border-slate-500 rounded-xl">{"let's talk!"}</button>
             </div>
             <button className="flex md:hidden" onClick={toggleMenu}>{!isOpened ? <Menu className="text-slate-500"/> : <X className="text-slate-500"/>}</button>
