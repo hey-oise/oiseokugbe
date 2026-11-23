@@ -1,7 +1,8 @@
 import TopBar from "./components/topBar";
 import Home from "./components/home";
 import About from "./components/about";
-import MyJourney from "./components/myJourney"
+import MyJourney from "./components/myJourney";
+import Skills from "./components/skill";
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
         <Home/>
         <About/>
         <MyJourney/>
+        <Skills/>
         </div>
     )
 }
