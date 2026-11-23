@@ -2,8 +2,8 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 export default function About() {
     return (
-        <div className="mt-20 h-120 py-15 
-        flex-col gap-4 border-b pl-6 border-slate-800">
+        <div id="home" className="mt-20 h-120 py-15 
+        flex-col gap-4 border-b pl-6 border-slate-800 scrool-h-20">
             <h1 className="capitalize  text-3xl max-w-80 md:max-w-100 font-bold italic text-slate-200">I build software, solve problems and turn ideas into products.</h1>
             <h2 className="text-slate-500 max-w-80 md:max-w-100">{`I'm Oise, a full-stack software developer focused on building modern web applications, backend systems and digital experiences.`}</h2>
             <div className="flex flex-row gap-2 p-0 m-0 w-fit mt-9">
