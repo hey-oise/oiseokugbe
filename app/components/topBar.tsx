@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import {Menu, X} from "lucide-react";
+import {Menu, X, MessagesCircle} from "lucide-react";
 export default function TopBar() {
     const navItems = ["home",
      "about",
@@ -32,7 +32,7 @@ export default function TopBar() {
                 <div className="flex flex-row gap-3">
                 {navItems.map(
                         (item, key) => { return (<Link href={"#"+item} key={key} className="text-slate-600 capitalize active:underline my-auto">{item}</Link>)})}
-                        </div>                     <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")} className="bg-slate-950 transition-all duration-300 hover:bg-slate-500 text-slate-500 hover:text-slate-950 capitalize py-2 px-5 border border-slate-800 hover:border-slate-500 rounded-xl">{"let's talk!"}</button>
+                        </div>                     <button onClick={() => window.open("https://wa.me/2347042071497⁠", "_blank")} className="bg-slate-950 transition-all duration-300 hover:bg-slate-500 text-slate-500 hover:text-slate-950 capitalize py-2 px-5 border border-slate-800 hover:border-slate-500 rounded-xl flex flex-row gap-1">{`let's talk!`}</button>
             </div>
             <button className="flex md:hidden" onClick={toggleMenu}>{!isOpened ? <Menu className="text-slate-500"/> : <X className="text-slate-500"/>}</button>
 
