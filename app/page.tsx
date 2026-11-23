@@ -5,11 +5,11 @@ import MyJourney from "./components/myJourney"
 
 export default function App() {
     return (
-        <>
+        <div className="scroll-smooth">
         <TopBar/>
         <Home/>
         <About/>
         <MyJourney/>
-        </>
+        </div>
     )
 }
