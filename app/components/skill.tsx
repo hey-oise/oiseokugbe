@@ -19,7 +19,7 @@ export default function Skills() {
 
             >Technologies I use to bring ideas to life and build functional digital experiences.</h3>
             <div className="flex flex-col mt-10 justify-center w-full">
-            <div className="flex flex-row flex-wrap gap-3 max-w-fit m-auto justify-center">
+            <div className="grid w-fit mx-auto md:grid-cols-8 sm:grid-col-4 grid-cols-3 gap-3">
                 {skills.map((item, key) => {
                     return(
                         <div className="border border-slate-800 h-20 w-27 gap-2 rounded-2xl item-center justify-center flex flex-col text-md font-bold text-slate-400 text-center" key={key}>
