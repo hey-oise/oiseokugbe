@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="bg-slate-900 h-100 border-b border-slate-800 pt-7 pl-6 flex flex-col gap-5 scroll-h-20" id="about">
+        <div className="bg-slate-900 h-100 border-b border-slate-800 pt-7 pl-6 flex flex-col gap-5 scroll-mt-20" id="about">
             <div className="flex flex-col max-w-80">
                 <h2 className="capitalize font-bold text-2xl">About me</h2>
                 <h3 className="capitalize font-semibold text-slate-200">Driven by curiosity.</h3>
