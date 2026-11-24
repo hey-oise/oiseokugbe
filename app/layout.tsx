@@ -40,7 +40,7 @@ export const metadata: Metadata = {
                                         robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
                                           verification: { google: "mtTbcdTD0ygT03gell3w7Qdxl3g5cH6viUMeQUtUIrA" },
                                             alternates: { canonical: "/" },
-                                              icons: { favicon:"/icon.png", apple: "/apple-icon.png" },
+                                              icons: { icon:"/icon.png", apple: "/apple-icon.png" },
                                                 category: "technology",
                                                 };
 
