@@ -34,13 +34,13 @@ export const metadata: Metadata = {
                           title: "Oise Giwa-Okugbe  | Full-Stack Developer",
                               description: "Building modern websites and digital experiences for businesses.",
                          
-                                  images: [{ url: "/og-image.jpg", width: 1200, height: 675, alt: "Oise Okugbe - Full-Stack Developer Portfolio" }],
+                                  images: [{ url: "/icon.png", width: 1200, height: 675, alt: "Oise Okugbe - Full-Stack Developer Portfolio" }],
                                     },
-                                      twitter: { card: "summary_large_image", title: "Oise Giwa-Okugbe | Full-Stack Developer", description: "Building modern websites and digital experiences for businesses.", images: ["/og-image.jpg"] },
+                                      twitter: { card: "summary_large_image", title: "Oise Giwa-Okugbe | Full-Stack Developer", description: "Building modern websites and digital experiences for businesses.", images: ["/icon.png"] },
                                         robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
                                           verification: { google: "mtTbcdTD0ygT03gell3w7Qdxl3g5cH6viUMeQUtUIrA" },
                                             alternates: { canonical: "/" },
-                                              icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
+                                              icons: { favicon:"/icon.png", apple: "/apple-icon.png" },
                                                 category: "technology",
                                                 };
 
