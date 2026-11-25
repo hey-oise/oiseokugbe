@@ -14,7 +14,7 @@ import {
 
 
           export default function Footer() {                         return (
-                                                                      <div id="contact" className={`scroll-mt-20 pt-10 gap-10 min-h-100 w-full p-5 lg:p-10 flex flex-col transition-all duration-500`}>
+                                                                      <div id="contact" className={`scroll-mt-20 pt-10 gap-1 w-full p-5 lg:p-10 flex flex-col transition-all duration-500`}>
                                                                             <div className="flex flex-col gap-2 justify-center">
                                                                                     <p className="text-slate-200 capitalize font-bold text-2xl">get in touch</p>
                                                                                             <p className="capitalize text-slate-500 max-w-150 font-semibold text-md">{"Interested in collaborating, exploring opportunities or discussing an idea? Feel free to reach out. I'd love to hear from you."}</p>
