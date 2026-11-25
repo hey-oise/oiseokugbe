@@ -19,7 +19,7 @@ export default function TopBar() {
         <>
         {isOpened &&
         <div
-          className="bg-black/50 backdrop-blur-sm fixed top-20 bottom-0 left-0 right-0"
+          className="bg-black/50 backdrop-blur-sm fixed top-20 bottom-0 left-0 right-0 z-0"
             onClick={toggleMenu}
             ></div>
         }
@@ -36,8 +36,8 @@ export default function TopBar() {
             </div>
             <button className="flex md:hidden" onClick={toggleMenu}>{!isOpened ? <Menu className="text-slate-500"/> : <X className="text-slate-500"/>}</button>
 
-            <div className={`bg-slate-900 w-60 h-fit fixed right-1 top-25 border border-slate-800 rounded-2xl md:hidden shadow-xl transition-all duration-300 ease-in-out flex flex-col gap-2 justfy-between py-3 ${isOpened ?
-                "opacity-100 -translate-x-4 visible z-50" :
+            <div className={`bg-slate-900 w-60 h-fit fixed right-1 top-25 border border-slate-800 rounded-2xl md:hidden shadow-xl transition-all duration-300 ease-in-out flex flex-col gap-2 justfy-between py-3 z-10 ${isOpened ?
+                "opacity-100 -translate-x-4 visible" :
                 "opacity-0  invisible translate-x-4 pointer-events-none"
             }`}>{navItems.map((item, key) => {
                 return (
